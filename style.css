@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.delete-button{
+  background-color: green;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 20px;
+}
+#menuItems{
+  margin-top: 10px;
+}
