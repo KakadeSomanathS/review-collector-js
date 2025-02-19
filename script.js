@@ -31,12 +31,13 @@ inputBtn.addEventListener("click", () => {
     delEle.textContent = "Delete";
     liEle.appendChild(delEle);
     delEle.classList.add("delete-button");
-    menuItems.appendChild(liEle);
-
+    menuItems.prepend(liEle);
+    inputBtn.textContent = "Add";
     // Edit Feature
     editEle.addEventListener("click", () => {
       console.log("I am Editing Button");
       inputFiled.value = textSpan.textContent;
+      inputBtn.textContent = "Update";
       liEle.remove();
     });
 
@@ -50,7 +51,7 @@ inputBtn.addEventListener("click", () => {
   }
 });
 
-// window.addEventListener("load", () => {
-//   const localStorageData = localStorage.getItem("todoItem");
-//   console.log(localStorageData);
-// });
+window.onload = () => {
+  const localStorageData = localStorage.getItem("todoItem");
+  console.log(localStorageData);
+};
