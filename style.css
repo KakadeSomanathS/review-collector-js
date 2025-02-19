@@ -14,3 +14,14 @@
 #menuItems{
   margin-top: 10px;
 }
+.edit-btn{
+  background-color: red;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-left: 20px;
+}
+li{
+  padding: 10px 0;
+}
